@@ -1,0 +1,65 @@
+.about{
+    margin: 20px 0;
+    overflow-x: hidden;
+    background: linear-gradient(to right, #FFC727 30%, transparent 30%);
+    border-top-right-radius: 20rem;
+}
+.about-site-img{
+    display: none;
+}
+.about-container{
+    margin: 2% 8%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50%, 50%));
+    max-width: 100%;
+}
+.about-img-container{
+    width: 100%;
+    max-width: 100%; /* Add this line */
+    overflow: hidden;
+}
+.about-image{
+    width: 100%;
+    height: auto;
+    animation-name: rotateImage; /* Name of the animation */
+    animation-duration: 45s; /* Duration of the animation */
+    animation-iteration-count: infinite; /* Make the animation loop infinitely */
+    animation-timing-function: linear; /* Linear timing function for smooth rotation */
+}
+
+/* Keyframes for the rotating animation */
+@keyframes rotateImage {
+    from {
+        transform: rotate(0deg); /* Start from 0 degrees rotation */
+    }
+    to {
+        transform: rotate(360deg); /* End at 360 degrees rotation (one full rotation) */
+    }
+}
+.about-text-container{
+    width: 100%;
+}
+.about-headings{
+    width: 100%;
+    margin-top: 7rem;
+}
+.about-title{
+    font-size: 1rem;
+    color: var#FFC727;
+    margin-bottom: -2rem;
+}
+.about-main-heading{
+    font-size: 2rem;
+    color: #222020;
+}
+.about-sub-heading{
+    font-size: 20;
+    margin-bottom: 0;
+    margin-right: 0rem;
+}
+.about-btns{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    gap: 1rem;
+}

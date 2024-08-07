@@ -1,0 +1,52 @@
+.seven-order-container {
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .offer-banner {
+    margin-bottom: 20px;
+  }
+  
+  .banner-image {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .offer-header {
+    font-size: 28px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #333;
+  }
+  
+  .offer-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #666;
+  }
+  
+  .bonus-food {
+    margin-bottom: 20px;
+  }
+  
+  .bonus-header {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .bonus-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .bonus-list li {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  

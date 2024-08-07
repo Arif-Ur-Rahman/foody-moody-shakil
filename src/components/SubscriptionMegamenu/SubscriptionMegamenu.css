@@ -1,0 +1,53 @@
+.subscription-megamenu {
+    margin-top: 5px;
+    position: absolute;
+    top: 100%;
+    left: -80px;
+    background-color: #07021a; /* Set background color */
+    border: 1px solid #092074;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    left: -200px;
+  }
+  
+  .subscription-megamenu h3 {
+    margin: 0 0 10px;
+  }
+  
+  .subscription-cards {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to right, #183d57, #da07af, rgb(0, 0, 0), rgb(86, 72, 72)); /* Initial gradient */
+  background-size: 400% auto;
+  animation: gradientAnimation 15s infinite;
+    color: white;
+  }
+  @keyframes gradientAnimation {
+    0% { background-position: 0% 25%; } /* Initial position */
+    25% { background-position: 25% 50%;}
+    50% { background-position: 50% 75%; } /* Halfway point */
+    100% { background-position: 75% 100%; } /* Reset to initial position */
+  }
+  
+  .subscription-card {
+    flex: 0 1 30%;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    color: #f9f7f7;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+    width: 150px;
+
+  }
+  
+  .subscription-card:hover {
+    background-color: #251b6d;
+    color: white;
+  }
+  

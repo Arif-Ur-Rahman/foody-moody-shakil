@@ -1,0 +1,99 @@
+/* Deal.css */
+
+/* Navbar styles */
+.navbar {
+    background-color: #000000;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 1000; /* Ensure the navbar appears above other content */
+  }
+  
+  /* Hero section styles */
+  .hero-section {
+    background-color: #000000;
+    padding: 100px 0;
+    text-align: center;
+    background-image: url('../../assets/Banner/Deal_of_the_day.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+  }
+  
+  .hero-heading {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  
+  .hero-subheading {
+    font-size: 24px;
+    margin-bottom: 40px;
+    color: #ffffff;
+  }
+  
+  .get-deal-link {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .get-deal-link:hover {
+    background-color: #e04f11;
+  }
+  
+  /* Deal container styles */
+  .deal-container {
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .deal-heading {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .deal-details {
+    display: flex;
+    align-items: center;
+  }
+  
+  .deal-image {
+    flex: 1;
+    margin-right: 40px;
+  }
+  
+  .deal-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .deal-description {
+    flex: 2;
+  }
+  
+  .deal-description p {
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  
+  .deal-price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
