@@ -1,0 +1,232 @@
+/* Subacriptions.css */
+
+.wrap {
+  padding: 20px; /* Adjust padding as needed */
+  background: #333333;
+}
+
+/* Pricing Table styles */
+/* These are general PT styles, and theme comes later */
+.pricing-section {
+  color: #ffffff; /* Adjust text color as needed */
+}
+
+.pen-title {
+  font-size: 34px;
+  color: white;
+}
+
+.pricing {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto 30px;
+  width: 100%;
+}
+
+.pricing-item {
+  align-items: stretch;
+  display: flex;
+  flex: 0 1 330px;
+  flex-direction: column;
+  position: relative;
+  text-align: center;
+}
+
+.pricing-feature-list {
+  text-align: left;
+}
+
+.pricing-action {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+/* Pricing theme */
+.pricing-theme .pricing-item {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  color: #ffffff;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: border-color 0.3s, background 0.3s;
+  margin-right: 40px;
+  margin-top: 20px;
+}
+
+/* .pricing-theme .pricing-item:last-child {
+  margin-right: 0;
+} */
+
+.pricing-theme .pricing-item:hover {
+  border: 1px solid rgba(255, 255, 255, 1);
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.pricing-title {
+  font-size: 28px;
+  font-weight: 400;
+  margin: 8px 0;
+  padding: 24px;
+  position: relative;
+}
+
+.pricing-title:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 35%;
+  width: 30%;
+  height: 2px;
+  background: #ff0000;
+}
+
+.pricing-price {
+  font-size: 48px;
+  font-weight: 400;
+  padding: 18px 0 0 0;
+  position: relative;
+}
+
+.pricing-currency {
+  font-size: 26px;
+  vertical-align: super;
+}
+
+.pricing-sentence {
+  margin: 0 auto;
+  padding: 14px 20px;
+  font-size: 16px;
+}
+
+.pricing-feature-list {
+  font-size: 20px;
+  list-style: none;
+  margin: 0 30px;
+  padding: 30px 0;
+}
+
+.pricing-feature {
+  line-height: 1.4;
+}
+
+.pricing-feature:before {
+  content: "\2713";
+  display: inline-block;
+  padding-right: 14px;
+  vertical-align: middle;
+}
+
+.pricing-action {
+  background: #f15f2a;
+  border-radius: 5px;
+  color: rgb(255, 255, 255); /* Adjust button text color as needed */
+  flex: none;
+  font-weight: 700;
+  margin: auto 20px 20px;
+  padding: 16px 20px;
+  transition: background 0.3s;
+}
+
+.pricing-action:focus,
+.pricing-action:hover {
+  background: #f04c10;
+  color: white;
+}
+
+/* Form styles */
+.subscription-form-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+  padding-bottom: 40px;
+}
+
+.subscription-form {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  max-width: 450px; /* Adjust max-width as needed */
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 0 auto; /* Center the form horizontally */
+  margin-top: 50px; /* Adjust top margin as needed */
+  position: relative;
+}
+
+.close-icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  color: #333333;
+}
+
+.subscription-form h2 {
+  font-size: 28px;
+  margin-bottom: 5px;
+  color: #f15f2a;
+}
+
+.subscription-form label {
+  display: block;
+  margin-bottom: 5px;
+  text-align: left;
+  color: #333333;
+}
+
+.subscription-form input,
+.subscription-form textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  line-height: 0.5;
+}
+
+.subscription-form button[type="submit"] {
+  background-color: #f15f2a;
+  color: #ffffff;
+  border: none;
+  padding: 5px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+.subscription-form button[type="submit"]:hover {
+  background-color: #f04c10;
+}
+
+
+
+@media screen and (max-width: 767px) {
+  /* CSS rules for mobile devices */
+  .pricing-theme .pricing-item{
+    margin-right: 0px !important;
+  }
+
+}

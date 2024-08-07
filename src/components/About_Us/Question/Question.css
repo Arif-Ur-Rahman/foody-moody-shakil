@@ -1,0 +1,133 @@
+/* General styles */
+.question {
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+.question-container {
+    margin: 4% 8%;
+}
+
+.question-headings {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.question-main-heading {
+    font-size: 3rem;
+    color: #222020;
+    margin-top: 1rem;
+}
+
+.question-sub-heading {
+    font-size: 18px;
+    margin-bottom: 0;
+    margin-top: 2rem;
+    text-align: center; /* Center align for all screen sizes */
+}
+
+.subscription {
+    position: relative;
+    width: 100%;
+    max-width: 400px; /* Set a maximum width for better responsiveness */
+    margin: 2rem auto; /* Center the form horizontally with margin auto */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-email {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.submit-email {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FFC727;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-email:hover {
+    background-color: #ffa500; /* Darker shade on hover */
+}
+
+/* Style the "Send" text inside the button */
+.before-submit {
+    display: inline-block;
+    vertical-align: middle;
+}
+@media (max-width: 768px) {
+    .subscription {
+        padding: 15px; /* Increase padding for smaller screens */
+    }
+}
+
+/* Adjustments for smaller devices */
+@media (max-width: 768px) {
+    .question-container {
+        margin: 2%;
+    }
+
+    .question-main-heading {
+        font-size: 2.4rem;
+        margin-top: -0.5rem;
+    }
+
+    .question-sub-heading {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .subscription .add-email {
+        width: 25rem;
+    }
+
+    .subscription .submit-email {
+        width: 100px;
+    }
+}
+
+/* Adjustments for medium-sized devices */
+@media (min-width: 601px) and (max-width: 1000px) {
+    .question-sub-heading {
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+}
+
+/* Adjustments for larger devices */
+@media (min-width: 1001px) and (max-width: 1300px) {
+    .question-sub-heading {
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+
+    .question-main-heading {
+        font-size: 2.4rem;
+        margin-top: -2rem;
+    }
+}
+
+/* Adjustments for extra small devices */
+@media (max-width: 420px) {
+    .subscription .add-email {
+        width: 15rem;
+    }
+
+    .subscription .submit-email {
+        width: 80px;
+    }
+}

@@ -1,0 +1,95 @@
+.payment-container {
+    margin: 50px auto;
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .payment-methods {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .payment-methods svg {
+    font-size: 40px;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  
+  .payment-methods svg.active {
+    color: #007bff;
+  }
+  
+  .card-payment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card-options {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .card-options svg {
+    font-size: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .card-options svg.active {
+    color: #007bff;
+  }
+  
+  .visa {
+    color: blue;
+  }
+  
+  .mastercard {
+    color: red;
+  }
+  
+  .paypal {
+    color: orange;
+  }
+  
+  .amex {
+    color: green;
+  }
+  
+  .payment-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .payment-form label {
+    margin-bottom: 5px;
+  }
+  
+  .payment-form input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .pay-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .pay-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .cash-payment {
+    text-align: center;
+  }
+  

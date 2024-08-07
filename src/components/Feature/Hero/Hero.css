@@ -1,0 +1,231 @@
+.hero {
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+  padding-top: 2rem;
+  padding-bottom: 10rem;
+  height: auto;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #050303;
+  overflow: hidden;
+}
+
+.hero-text {
+  flex: 50%;
+}
+
+.hero-btn-middle {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.custom__button {
+  
+}
+
+.bg-gradient {
+  background: linear-gradient(45deg, #f97e8f 0%, #e390e5 100%);
+}
+
+.tex-head {
+  text-align: center;
+}
+
+.tex-head h1 {
+  font-size: 2.5rem;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.tex-head h1 span {
+  font-size: 3rem;
+  color: #f97e8f;
+  padding-top: 1rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.wd-60 {
+  width: 60%;
+}
+
+.wd-40 {
+  width: 40%;
+}
+
+.slide-main {
+  flex: 50%;
+  display: flex;
+}
+
+.stack {
+  box-shadow: 2px 3px 6px 1px rgba(0, 0, 0, 0.2),
+    inset 1px 4px 10px 10px rgba(0, 0, 0, 0.19);
+}
+
+.stack-rotate1 {
+  transform: rotate(352deg);
+  right: -10%;
+  top: -6%;
+}
+
+.stack-rotate2 {
+  transform: rotate(1deg);
+  right: -4%;
+  margin-top: 32px;
+}
+
+.stack-rotate3 {
+  transform: rotate(11deg);
+}
+
+.slide-card {
+  width: 300px;
+  height: 400px;
+  aspect-ratio: 3 / 2;
+  background-color: #fff;
+  position: relative;
+  cursor: pointer;
+  padding: 5% 5% 5% 5%;
+
+  &:before,
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border: 4px solid;
+    background-color: #fff;
+    transform-origin: center center;
+    z-index: -1;
+    top: 0;
+    left: 0;
+  }
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
+  aspect-ratio: 1 / 1;
+  position: relative;
+}
+
+.slide-card a {
+  width: 100%;
+  height: 100%;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+}
+
+.browser-warning {
+  margin-bottom: 4rem;
+}
+
+@supports (aspect-ratio: 1 / 1) {
+  .browser-warning {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero {
+    padding-top: 14rem;
+    padding-bottom: 10rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .hero {
+    padding-top: 9rem;
+    padding-bottom: 10rem;
+  }
+
+  .hero-btn-middle button {
+    padding: 0;
+  }
+
+  .stack {
+    width: 250px !important;
+    height: 350px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    height: auto;
+    flex-direction: column;
+    padding: 7.5rem 0;
+  }
+
+  .hero-slider {
+    margin-left: -6rem;
+  }
+
+  .slide-main {
+    padding-top: 3rem;
+  }
+
+  .tex-head h1 {
+    font-size: 2rem;
+    height: auto;
+  }
+
+  .tex-head h1 span {
+    font-size: 3rem;
+  }
+
+  .stack {
+    width: 40vw !important;
+    height: 400px !important;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .hero {
+    height: auto !important;
+    padding: 5.5rem 0;
+  }
+
+  .hero-slider {
+    margin: 0 auto;
+  }
+
+  .slide-main {
+    margin-left: -20px;
+  }
+  .full-video .video {
+    height: auto;
+    top: 35%;
+  }
+  .stack {
+    height: auto !important;
+  }
+
+  .slide-card {
+    width: 40vw !important;
+    height: 200px !important;
+  }
+
+  .stack-rotate1 {
+    top: 0;
+  }
+
+  .stack-rotate2 {
+    right: 0;
+  }
+
+  .stack-rotate3 {
+    left: -5%;
+  }
+}

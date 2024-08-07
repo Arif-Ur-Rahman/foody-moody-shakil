@@ -1,0 +1,72 @@
+/* Cashback.css */
+
+.cashback-container {
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cashback-banner {
+    margin-bottom: 20px;
+  }
+  
+  .cashback-banner img {
+    width: 100%; /* Image will take full width of the container */
+    max-width: 100%; /* Ensure image doesn't exceed its original width */
+  }
+  
+  .cashback-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 20px;
+  }
+  
+  .cashback-content {
+    max-width: 800px; /* Limit content width for better readability */
+    margin: 0 auto;
+  }
+  
+  .cashback-terms {
+    font-size: 14px;
+    color: #999999;
+  }
+  
+  .cashback-note {
+    font-size: 14px;
+    color: #999999;
+    margin-top: 10px;
+  }
+  
+  .cashback-note strong {
+    color: #333333;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 1200px) {
+    .cashback-container {
+      max-width: 900px; /* Adjust max-width for larger tablets */
+    }
+  
+    .cashback-content {
+      max-width: 90%; /* Allow content to take full width on larger tablets */
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .cashback-container {
+      max-width: 700px; /* Adjust max-width for smaller tablets */
+    }
+  }
+  
+  @media (max-width: 768px) {
+  
+    .cashback-title {
+      font-size: 28px; /* Decrease font size for smaller screens */
+    }
+  
+    .cashback-content {
+      max-width: 100%; /* Allow content to take full width on smaller screens */
+    }
+  }
+  
